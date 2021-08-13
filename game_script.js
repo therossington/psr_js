@@ -13,7 +13,8 @@ function getComputerSelection() {
 
 // Player selection.
 
-let getPlayerSelection = prompt("Paper, scissors, rock?");
+const btn = document.querySelector('button');
+let getPlayerSelection = "rock";
 
 // Win counter.
 
@@ -71,8 +72,10 @@ function playRound(getPlayerSelection, getComputerSelection) {
     }
 }
 
-// Five round game (not looped).
+btn.addEventListener('click',playRound);
 
+// Five round game (not looped).
+/*
 function game() {
     console.log(playRound(getPlayerSelection, getComputerSelection()))
     console.log("Player score = "+playerWins)
@@ -86,4 +89,4 @@ function game() {
             return "It's a tie!"
         }
     }
-}        
+} */    
